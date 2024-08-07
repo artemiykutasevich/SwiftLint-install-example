@@ -13,9 +13,14 @@
 		EA88073D2C63811900344628 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA88073C2C63811900344628 /* Base */; };
 		EA88073F2C63811B00344628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA88073E2C63811B00344628 /* Assets.xcassets */; };
 		EA8807422C63811B00344628 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EA8807412C63811B00344628 /* Base */; };
+		EA88074A2C638A3F00344628 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EA8807492C638A3F00344628 /* .swiftlint.yml */; };
+		F8223E283BEE4D0A28606743 /* Pods_SwiftLintInstallExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BDD7982DC47112CA17DB0E /* Pods_SwiftLintInstallExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64BDD7982DC47112CA17DB0E /* Pods_SwiftLintInstallExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLintInstallExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7264708735E71091474345A6 /* Pods-SwiftLintInstallExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLintInstallExample.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLintInstallExample/Pods-SwiftLintInstallExample.debug.xcconfig"; sourceTree = "<group>"; };
+		E18E1BCEF85EB0ACC42ED435 /* Pods-SwiftLintInstallExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLintInstallExample.release.xcconfig"; path = "Target Support Files/Pods-SwiftLintInstallExample/Pods-SwiftLintInstallExample.release.xcconfig"; sourceTree = "<group>"; };
 		EA8807322C63811900344628 /* SwiftLintInstallExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLintInstallExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8807352C63811900344628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA8807372C63811900344628 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		EA88073E2C63811B00344628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8807412C63811B00344628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA8807432C63811B00344628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA8807492C638A3F00344628 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8223E283BEE4D0A28606743 /* Pods_SwiftLintInstallExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F3CD6D671C9BC7BD8404428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64BDD7982DC47112CA17DB0E /* Pods_SwiftLintInstallExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD99D13D6ADD96025AC6C047 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7264708735E71091474345A6 /* Pods-SwiftLintInstallExample.debug.xcconfig */,
+				E18E1BCEF85EB0ACC42ED435 /* Pods-SwiftLintInstallExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA8807292C63811800344628 = {
 			isa = PBXGroup;
 			children = (
+				EA8807492C638A3F00344628 /* .swiftlint.yml */,
 				EA8807342C63811900344628 /* SwiftLintInstallExample */,
 				EA8807332C63811900344628 /* Products */,
+				BD99D13D6ADD96025AC6C047 /* Pods */,
+				2F3CD6D671C9BC7BD8404428 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA8807462C63811B00344628 /* Build configuration list for PBXNativeTarget "SwiftLintInstallExample" */;
 			buildPhases = (
+				CD87C2D267C6490C96B5F056 /* [CP] Check Pods Manifest.lock */,
 				EA88072E2C63811900344628 /* Sources */,
 				EA88072F2C63811900344628 /* Frameworks */,
 				EA8807302C63811900344628 /* Resources */,
+				EA88074B2C638AFD00344628 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -125,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA88074A2C638A3F00344628 /* .swiftlint.yml in Resources */,
 				EA88073F2C63811B00344628 /* Assets.xcassets in Resources */,
 				EA8807422C63811B00344628 /* Base in Resources */,
 				EA88073D2C63811900344628 /* Base in Resources */,
@@ -132,6 +162,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD87C2D267C6490C96B5F056 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftLintInstallExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA88074B2C638AFD00344628 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA88072E2C63811900344628 /* Sources */ = {
@@ -203,7 +276,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +339,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +360,7 @@
 		};
 		EA8807472C63811B00344628 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7264708735E71091474345A6 /* Pods-SwiftLintInstallExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +388,7 @@
 		};
 		EA8807482C63811B00344628 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18E1BCEF85EB0ACC42ED435 /* Pods-SwiftLintInstallExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
