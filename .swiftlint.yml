@@ -1,0 +1,9 @@
+
+only_rules:
+  - vertical_whitespace
+  - todo
+
+excluded:
+  - Carthage
+  - Pods
+  - .build
